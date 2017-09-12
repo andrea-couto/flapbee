@@ -7,7 +7,7 @@ var speed = 5;
 var changescore = 10;
 
 function setup () {
-  createCanvas(400,600);
+  createCanvas(400,700);
   bee = new Bee();
   img = loadImage("bee.png");
   flowerimg = loadImage("flower.png");
@@ -56,15 +56,10 @@ function keyPressed () {
 	if (key == ' ') {
 		bee.up();
 	}
-  if (keyCode === UP_ARROW){
-    //speed +=1;
-  }
 }
 
 function touchStarted() {
-	if (value > 0) {
-    		bee.up();
-  	}
+	bee.up();
 }
 
 
