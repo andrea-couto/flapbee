@@ -54,6 +54,7 @@ function draw () {
     textSize(16);
     text("Space to Jump", 10, 55);
   }
+  btn.onclick = bee.up();
 }
 
 
