@@ -17,7 +17,7 @@ function setup () {
   pipes.push(new Pipe());
   btn.appendChild(txt);
   document.body.appendChild(btn);
-  btn.addEvenetListener("click", bee.up());
+  btn.addEventListener("click", bee.up());
 }
 
 function draw () {
