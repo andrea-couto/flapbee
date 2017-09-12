@@ -13,6 +13,10 @@ function setup () {
   flowerimg = loadImage("flower.png");
   noStroke();
   pipes.push(new Pipe());
+  var btn = document.createElement("BUTTON");
+  var txt = document.createTextNode("JUMP");
+  btn.appendChild(txt);
+  document.body.appendChild(btn);
 }
 
 function draw () {
