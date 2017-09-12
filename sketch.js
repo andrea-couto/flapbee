@@ -17,12 +17,12 @@ function setup () {
   pipes.push(new Pipe());
   btn.appendChild(txt);
   document.body.appendChild(btn);
-  btn.addEventListener("click", bee.up());
 }
 
 function draw () {
   background(156,178,147);
 
+  btn.addEventListener("click", bee.up());
 
   if (frameCount % 80 == 0) {
   	pipes.push(new Pipe());
