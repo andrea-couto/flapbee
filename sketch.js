@@ -62,6 +62,12 @@ function keyPressed () {
   }
 }
 
+function touchStarted() {
+	if (value > 0) {
+    		bee.up();
+  	}
+}
+
 
 
 
