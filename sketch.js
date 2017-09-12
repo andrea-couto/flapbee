@@ -17,6 +17,7 @@ function setup () {
   pipes.push(new Pipe());
   btn.appendChild(txt);
   document.body.appendChild(btn);
+  btn.addEvenetListener("click", bee.up());
 }
 
 function draw () {
@@ -54,7 +55,6 @@ function draw () {
     textSize(16);
     text("Space to Jump", 10, 55);
   }
-  btn.onclick = bee.up();
 }
 
 
