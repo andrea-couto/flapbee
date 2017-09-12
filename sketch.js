@@ -5,6 +5,8 @@ var pipes = [];
 var score = 0;
 var speed = 5;
 var changescore = 10;
+var btn = document.createElement("BUTTON");
+var txt = document.createTextNode("JUMP");
 
 function setup () {
   createCanvas(400,600);
@@ -13,8 +15,6 @@ function setup () {
   flowerimg = loadImage("flower.png");
   noStroke();
   pipes.push(new Pipe());
-  var btn = document.createElement("BUTTON");
-  var txt = document.createTextNode("JUMP");
   btn.appendChild(txt);
   document.body.appendChild(btn);
 }
